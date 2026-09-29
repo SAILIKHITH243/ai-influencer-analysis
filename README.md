@@ -330,19 +330,21 @@ The Streamlit dashboard provides an interactive interface for exploring influenc
 
 # 📸 Dashboard Preview
 
-> Add your Streamlit dashboard screenshot here.
 
-Save your screenshot inside the project as:
+### 📊 Main Dashboard
+![Main Dashboard](screenshots/dashboard.png)
 
-```text
-dashboard.png
-```
+### 📋 Influencer Performance
+![Influencer Performance](screenshots/influencer-performance.png)
 
-Then add:
+### 🏆 Influencer Performance Score
+![Influencer Performance Score](screenshots/influencer-score.png)
 
-```markdown
-![AI Influencer Analysis Dashboard](dashboard.png)
-```
+### 📈 Engagement Rate Analysis
+![Engagement Rate Analysis](screenshots/engagement-rate.png)
+
+### 👥 Follower Analysis
+![Follower Analysis](screenshots/follower-analysis.png)
 
 ---
 
