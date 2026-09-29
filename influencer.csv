@@ -1,0 +1,21 @@
+username,platform,followers,following,avg_likes,avg_comments,posts,verified,caption,suitable
+influencer_01,Instagram,125000,500,8500,420,320,1,"I love this amazing product!",1
+influencer_02,Instagram,450000,2100,4200,180,850,1,"This product is okay and useful.",1
+influencer_03,Instagram,75000,300,6500,510,220,0,"Amazing product, I really recommend it!",1
+influencer_04,TikTok,900000,4500,7200,210,1200,1,"Not happy with this product.",0
+influencer_05,TikTok,55000,800,5200,380,180,0,"Great experience and wonderful product!",1
+influencer_06,Twitter,180000,1200,3100,250,450,1,"The product works really well.",1
+influencer_07,Twitter,320000,6000,1800,90,900,1,"I don't like this product.",0
+influencer_08,Instagram,95000,400,7200,620,280,0,"Excellent product and great quality!",1
+influencer_09,TikTok,220000,1800,9100,700,520,1,"Absolutely love this product!",1
+influencer_10,Twitter,70000,5000,900,50,700,0,"The product is not useful.",0
+influencer_11,Instagram,150000,900,7800,500,400,1,"Amazing quality and excellent service!",1
+influencer_12,TikTok,600000,8000,2500,100,1000,1,"I am disappointed with this product.",0
+influencer_13,Instagram,85000,600,6000,450,250,0,"Great product, highly recommended!",1
+influencer_14,Twitter,210000,3500,2200,130,650,1,"This product is average.",0
+influencer_15,TikTok,110000,700,8200,580,350,0,"Absolutely fantastic product!",1
+influencer_16,Instagram,400000,9000,3000,120,1100,1,"Not recommended. Very poor experience.",0
+influencer_17,Twitter,95000,450,5000,350,300,0,"Really useful and wonderful product!",1
+influencer_18,TikTok,175000,1400,7000,520,480,1,"I love this product and the quality!",1
+influencer_19,Instagram,300000,7500,1800,80,900,1,"I don't recommend this product.",0
+influencer_20,Twitter,65000,350,5800,400,200,0,"Excellent experience and great product!",1
