@@ -1,5 +1,19 @@
+# Secrets - never commit API credentials
 .streamlit/secrets.toml
-influencer_history.db
+.streamlit/*.local.toml
+.env
+.env.*
+
+# Local history database and Python caches
+*.db
+*.sqlite
+*.sqlite3
 __pycache__/
+*.py[cod]
 .venv/
+venv/
+
+# Local backups and editor files
 app_before*.py
+*.bak
+.DS_Store

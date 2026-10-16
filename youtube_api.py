@@ -1,4 +1,3 @@
-
 import os
 
 import pandas as pd
@@ -103,7 +102,7 @@ def search_youtube_influencers(product, max_results=25):
     if not 1 <= max_results <= 50:
         raise YouTubeAPIError("Choose between 1 and 50 search results.")
 
-    # 1. Search YouTube videos related to the product.
+    # Search YouTube videos related to the product.
     search_data = api_get(
         "search",
         {
@@ -129,7 +128,7 @@ def search_youtube_influencers(product, max_results=25):
     if not video_ids:
         return pd.DataFrame(), pd.DataFrame()
 
-    # 2. Retrieve public statistics for those videos.
+    # Retrieve public statistics for those videos.
     video_data = api_get(
         "videos",
         {
@@ -199,9 +198,7 @@ def search_youtube_influencers(product, max_results=25):
             "comments": comments,
             "engagement_rate_pct": interaction_rate,
             "thumbnail_url": thumbnail_url,
-            "video_url": (
-                f"https://www.youtube.com/watch?v={video_id}"
-            ),
+            "video_url": f"https://www.youtube.com/watch?v={video_id}",
         })
 
     videos_df = pd.DataFrame(video_rows)
@@ -209,7 +206,7 @@ def search_youtube_influencers(product, max_results=25):
     if not channel_ids:
         return pd.DataFrame(), videos_df
 
-    # 3. Retrieve public statistics for the discovered channels.
+    # Retrieve statistics for discovered channels.
     channel_map = {}
 
     for start in range(0, len(channel_ids), 50):
@@ -226,7 +223,7 @@ def search_youtube_influencers(product, max_results=25):
         for channel in channel_data.get("items", []):
             channel_map[channel["id"]] = channel
 
-    # 4. Summarize each channel and its matching videos.
+    # Summarise each channel and its matching videos.
     channel_rows = []
 
     for channel_id in channel_ids:
@@ -262,14 +259,11 @@ def search_youtube_influencers(product, max_results=25):
                 (row["likes"] or 0) + (row["comments"] or 0)
                 for row in valid_interactions
             )
-            interaction_rate = (
-                total_interactions / total_views * 100
-            )
+            interaction_rate = total_interactions / total_views * 100
         else:
             interaction_rate = None
 
         custom_url = snippet.get("customUrl")
-
         channel_url = (
             f"https://www.youtube.com/{custom_url}"
             if custom_url
